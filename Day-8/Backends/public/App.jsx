@@ -12,14 +12,7 @@ function App(){
       .then((res)=>{
       setNotes(res.data.notes)
      })
-     function updatenotes(noteid){
-      axios.patch(`http://localhost:3000/api/notes/${noteid}`)
-      .then(res=>{
-        fetchnotes()
-        
-      })
-      setNotes(res.data.notes)
-     }
+     
        }
       useEffect(()=>{
           fetchnotes()
@@ -33,7 +26,15 @@ function App(){
         })
       }
       
-    
+    function updatenotes(noteid){
+      const newdescription=prompt("Enter new description")
+      axios.patch(`http://localhost:3000/api/notes/${noteid}`,{description:newdescription})
+      .then(res=>{
+        fetchnotes()
+        
+      })
+      
+     }
    
      function handleSubmit(e){
       e.preventDefault()
