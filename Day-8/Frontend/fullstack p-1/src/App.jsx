@@ -12,6 +12,14 @@ function App(){
       .then((res)=>{
       setNotes(res.data.notes)
      })
+     function updatenotes(noteid){
+      axios.patch(`http://localhost:3000/api/notes/${noteid}`)
+      .then(res=>{
+        fetchnotes()
+        
+      })
+      setNotes(res.data.notes)
+     }
        }
       useEffect(()=>{
           fetchnotes()
@@ -54,6 +62,7 @@ function App(){
         <h1>{note.tittle}</h1>
         <p>{note.description}</p>
         <button onClick={()=>{deletenotes(note._id)}}>Delete Note</button>
+        <button className='second'onClick={()=>{updatenotes(note._id)}}>Update Note</button>
       </div>
       })
     }
