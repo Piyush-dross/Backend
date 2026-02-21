@@ -8,7 +8,7 @@ function App(){
        
      ])
      function fetchnotes(){
-         axios.get('http://localhost:3000/api/notes')
+         axios.get('https://backend-zerw.onrender.com/api/notes')
       .then((res)=>{
       setNotes(res.data.notes)
      })
@@ -18,7 +18,7 @@ function App(){
           fetchnotes()
       },[])
       function deletenotes(noteid){
-        axios.delete(`http://localhost:3000/api/notes/${noteid}`)
+        axios.delete(`https://backend-zerw.onrender.com/api/notes/${noteid}`)
         .then(res=>{
           console.log(res.data)
           fetchnotes()
@@ -28,7 +28,7 @@ function App(){
       
     function updatenotes(noteid){
       const newdescription=prompt("Enter new description")
-      axios.patch(`http://localhost:3000/api/notes/${noteid}`,{description:newdescription})
+      axios.patch(`https://backend-zerw.onrender.com/api/notes/${noteid}`,{description:newdescription})
       .then(res=>{
         fetchnotes()
         
@@ -40,7 +40,7 @@ function App(){
       e.preventDefault()
       const {tittle,description}=e.target.elements
       console.log(tittle.value,description.value)
-      axios.post('http://localhost:3000/api/notes',{
+      axios.post('https://backend-zerw.onrender.com/api/notes',{
       tittle:tittle.value,
       description:description.value
     })
