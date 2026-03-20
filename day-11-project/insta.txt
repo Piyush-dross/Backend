@@ -1,0 +1,15 @@
+=>authentication
+    =>register (1.user ka data collect kerna 2. user ko token dena)
+    =>login
+    =>log out[token blacklisting]
+    =>[otp based registration]
+
+=>post
+    1.can see the feed
+    2.like post(collection posts)
+    3.create post
+    4.save post
+
+=>users
+    1.follower
+    2.following

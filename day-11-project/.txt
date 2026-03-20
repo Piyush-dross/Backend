@@ -1,0 +1,8 @@
+post includes
+[
+    caption:string,
+    image_url:string,
+    user:userId
+    createdAt:date-time,
+ 
+]
