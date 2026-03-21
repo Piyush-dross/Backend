@@ -1,0 +1,9 @@
+React Four layer of architecture
+
+Ui= ui dikhana and navigation handle (pages,components)
+
+Hook= State and apis manage kerna [hooks]
+
+State=data store kerna [auth.context.jsx,post.context.jsx]
+
+api=Backend se communicate krne ke lia [services/auth.api.js]

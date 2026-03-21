@@ -1,0 +1,26 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   scroll-behavior: smooth;
+   background-color:rgb(182, 180, 180);
+}
+button{
+    padding-inline:1rem;
+    padding-block:1rem;
+    border-radius:.5rem;
+    border:none;
+
+    &:hover{
+        border:rgb(76, 123, 254) 2px solid
+    }
+    &:active{
+        transform: scale(.9);
+        
+    }
+}

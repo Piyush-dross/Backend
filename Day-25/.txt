@@ -1,0 +1,5 @@
+redis public end point include
+
+public endpoint/host - redis-15049.crce286.ap-south-1-1.ec2.cloud.redislabs.com
+port - 15049
+Password = "JNKUvrRXgzz2RFwAWHfwycJVSpSWMQL2"

@@ -1,0 +1,19 @@
+@use './button.scss';
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body,#root {
+  
+   width: 100%;
+   scroll-behavior: smooth;
+   background-color:black;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: whitesmoke;
+}
+a{
+    color:rgb(255, 145, 0);
+    text-decoration:none;
+}
