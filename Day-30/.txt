@@ -1,0 +1,7 @@
+Authentication
+
+Authorization
+
+validation => using express-validator to check data is in correct form or not exp email:"piyush" wrong correct form "piyush@gmail.com"
+
+verification
